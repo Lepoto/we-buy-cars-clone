@@ -1,6 +1,7 @@
 # we-buy-cars-clone
 
-This is clone of an existing platform for buying/selling cars. In this project I'll be showcasing my frontend skills
+This is clone of an existing platform for buying/selling cars. In this project, I'll be showcasing my frontend skills.
+WeBuyCars URL (https://www.webuycars.co.za/)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
