@@ -21,7 +21,7 @@ const NavBar = () => {
                     <li className='hover:text-primary'>Contact Us</li>
                     <li className='hover:text-primary'>Investors</li>
                     <li className='text-primary'>Sign Up</li>
-                    <div className='text-gray-400'>|</div>
+                    <div className='border-l-2 border-gray-300'></div>
                     <li>Login</li>
                 </ul>
             </div>

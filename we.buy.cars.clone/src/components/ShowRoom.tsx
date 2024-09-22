@@ -2,11 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter, faArrowDownWideShort  } from '@fortawesome/free-solid-svg-icons';
 
+import Card from './Card';
+
 const ShowRoom = () => {
   return (
     <div className='px-16'>
       {/* Filter and Sorting */}
-      <div className='flex justify-between px-9 py-5'>
+      <div className='flex justify-between px-5 py-5'>
         <div>
           <button className='flex items-center space-x-2 border border-gray-800 p-3 rounded-lg  text-gray-700 hover:text-gray-900'>
             <span className='text-nowrap text-sm font-semibold'>FILTER MY SEARCH</span>
@@ -31,6 +33,13 @@ const ShowRoom = () => {
           </button>
         </div>
       </div>
+
+      <div className='mx-5 grid grid-cols-4'>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+        </div>
     </div>
   );
 }
