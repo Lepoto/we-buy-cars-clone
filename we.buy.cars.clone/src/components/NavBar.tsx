@@ -1,22 +1,25 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const NavBar = () => {
   return (
     <nav className="bg-white h-20 shadow-lg px-16">
       <div className=''>
-        <div className='flex justify-between'>
-            <Image src='/webuycars.png' alt='' width={80} height={80} />
+        <div className='flex justify-between py-1'>
+            <Image src='/webuycars.png' alt='' width={75} height={75} />
 
             <div className='py-6'>
-                <ul className='flex justify-between space-x-14 text-base text-nowrap font-bold'>
-                    <li>Sell my car</li>
-                    <li>Buy a car</li>
-                    <li>Finance & Services</li>
-                    <li>Our Locations</li>
-                    <li>About</li>
-                    <li>Contact Us</li>
-                    <li>Investors</li>
+                <ul className='flex justify-between space-x-16 text-sm font-semibold'>
+                    <li className='hover:text-primary'>Sell my car</li>
+                    <li>
+                      <Link href="/buy-a-car" className='hover:text-primary hover:border-b-4 hover:border-primary py-7 px-3'>Buy a car</Link>
+                    </li>
+                    <li className='hover:text-primary'>Finance & Services</li>
+                    <li className='hover:text-primary'>Our Locations</li>
+                    <li className='hover:text-primary'>About</li>
+                    <li className='hover:text-primary'>Contact Us</li>
+                    <li className='hover:text-primary'>Investors</li>
                     <li className='text-primary'>Sign Up</li>
                     <div className='text-gray-400'>|</div>
                     <li>Login</li>
