@@ -29,6 +29,25 @@ body {
   font-size: 13px;
   line-height: 20px;
 }
+.border-b-6{
+  border-bottom-width: 6px;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 6px;
+  /* Border thickness */
+  background-color: var(--tw-border-opacity, 1) rgba(59, 130, 246, 1);
+  /* Tailwind 'border-primary' equivalent */
+  transition: width 0.3s ease-in-out;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
 
 @layer utilities {
   .text-balance {

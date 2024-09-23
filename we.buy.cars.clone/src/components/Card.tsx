@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const Card = () => {
   return (
-    <Link href="/" className='hover:w-85'>
-    <div className='bg-white shadow-lg rounded-lg w-80'> {/* Fixed width */}
+    <Link href="/">
+    <div className='bg-white shadow-lg rounded-lg w-80 mx-4'> {/* Fixed width */}
         <div className="relative">
                     {/* Image */}
             <Image src='/atos.jpg' alt='car' width={350} height={200} className="rounded-t-lg" />
@@ -42,7 +42,7 @@ const Card = () => {
                     </ul>
 
                     {/* Border */}
-                    <div className='border-b-2 border-gray-100 my-2'></div>
+                    <div className='border-b-2 border-second my-2'></div>
 
                     {/* Price and Finance */}
                     <div className='flex justify-between items-center'>
@@ -51,7 +51,14 @@ const Card = () => {
                         <p className='text-xs text-gray-300'>Finance From</p>
                         <h5 className='font-medium underline'>R 2350 pm</h5>
                     </div>
+                    
                 </div>
+                <ul className='flex space-x-3 text-sm mt-5'>
+                        <li className='flex items-center space-x-2 bg-second rounded-2xl p-1'>
+                            <FontAwesomeIcon icon={faMapMarker} className="w-2 h-2" />
+                            <p>Platinum</p>
+                        </li>
+                    </ul>
         </div>
     </div>
     </Link>
